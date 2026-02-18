@@ -13,11 +13,11 @@ namespace ICE_TASK_1
         {
             Console.Write("Enter student's name: "); //prompts the user to enter the name
 
-           //---------------------------------------- start of setup and input  ---------------------------------------//
+            //---------------------------------------- start of setup and input  ---------------------------------------//
 
             var StudentName = Console.ReadLine();
-            
-            
+
+
             var scores = new int[3]; //creates an array list  that has excatly 3 slots (for the 3 scores the user enters)
             int total = 0; //collects all the scores to store later (this is later used in the calculation of the averages)
             //---------------------------------------- end of setup and input  ----------------------------------------//
@@ -40,7 +40,7 @@ namespace ICE_TASK_1
             //---------------------------------------- start of calculations and logic  ----------------------------------------//
 
             var average = Math.Round(total / 3.0, 2); // .0 is used to ensure we get a double decimal (without it it would be rounded to a whole number) (2 ensures it doesnt go past 2 decimal places).
-                    
+
 
             var finalLetterGrade = "C"; //fall back on letter grade and to ref to later (aka default)
 
@@ -48,7 +48,7 @@ namespace ICE_TASK_1
             //-------- Start of declaring average letter grade --------//
             if (average >= 90)
             { finalLetterGrade = "A"; } //starts at A
-            else  if (average >= 80)
+            else if (average >= 80)
             { finalLetterGrade = "B"; }
             else if (average >= 70)
             { finalLetterGrade = "C"; }
@@ -72,7 +72,7 @@ namespace ICE_TASK_1
                 "%"); //shows what the user has entered 
 
             Console.WriteLine("Average Score: " + average.ToString("0.00") + "%"); //"0.00" ensures that two deciaml places is enforced/shown
-            Console.WriteLine("Final Grade: "  + finalLetterGrade);
+            Console.WriteLine("Final Grade: " + finalLetterGrade);
 
             Console.ReadKey();   //waits for you to press a key
             //---------------------------------------- end of displaying results  ----------------------------------------//
