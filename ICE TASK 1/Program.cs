@@ -13,7 +13,7 @@ namespace ICE_TASK_1
         {
             Console.Write("Enter student's name: "); //prompts the user to enter the name
 
-           //---------------------------------------- start of setup and input  ----------------------------------------//
+           //---------------------------------------- start of setup and input  ---------------------------------------//
 
             var StudentName = Console.ReadLine();
             
